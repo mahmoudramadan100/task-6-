@@ -522,11 +522,13 @@ P {
 @media (min-width: 576px) and (max-width: 767px) {
   .header .container .img-content img {
     border-radius: 0 0 15px 15px;
+    max-width: 100%;
   }
 }
 @media (min-width: 0) and (max-width: 576px) {
   .header .container .img-content img {
     border-radius: 0 0 15px 15px;
+    max-width: 100%;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
@@ -644,6 +646,12 @@ P {
   border-radius: 15px;
   width: 215px;
 }
+@media (min-width: 0) and (max-width: 576px) {
+  .about .container .img .child img {
+    width: 150px;
+    height: 150px;
+  }
+}
 .about .container .img .child h6 {
   color: #131313;
   padding: 20px 15px;
@@ -667,6 +675,11 @@ P {
   .about .container .img .child h6 {
     padding: 10px 10px;
     font-size: 15px;
+  }
+}
+@media (min-width: 0) and (max-width: 576px) {
+  .about .container .img .child {
+    width: 145px !important;
   }
 }
 .about .container .img .child-one {
@@ -1225,6 +1238,10 @@ P {
   padding: 100px;
   background-color: #026451;
   text-align: center;
+}
+.main .container {
+  display: flex;
+  justify-content: center;
 }
 .main .content h1 {
   color: #fff;

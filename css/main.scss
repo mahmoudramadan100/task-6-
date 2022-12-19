@@ -275,9 +275,11 @@
                 }
                 @include breakpoints(sm) {
                     @include vendor-prefix(border-radius, 0 0 15px 15px);
+                    max-width: 100%;
                 }
                 @include breakpoints(xs) {
                     @include vendor-prefix(border-radius, 0 0 15px 15px);
+                    max-width: 100%;
                 }
             }
             @include breakpoints(sm) {
@@ -376,6 +378,12 @@
                 position: absolute;
                 @include vendor-prefix(border-radius, 15px);
                 width: 215px;
+                img {
+                    @include breakpoints(xs) {
+                        width: 150px;
+                        height: 150px;
+                    }
+                }
                 h6 {
                     color: $black-color;
                     padding: 20px 15px;
@@ -394,6 +402,9 @@
                         padding: 10px 10px;
                         font-size: 15px;
                     }
+                }
+                @include breakpoints(xs) {
+                    width: 145px !important;
                 }
             }
             .child-one {
@@ -856,6 +867,10 @@
     padding: 100px;
     background-color: $green-color;
     text-align: center;
+    .container {
+        display: flex;
+        justify-content: center;
+    }
     .content {
         
         h1 {
